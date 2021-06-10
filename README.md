@@ -6,3 +6,5 @@ Find the biggest square in a map given as an input.
 `make`
 
 `./bsq maps/map`
+
+Be careful of the -42 :)
