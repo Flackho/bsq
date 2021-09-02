@@ -24,7 +24,7 @@ OBJ	=	$(SRC:.c=.o)$(MAIN:.c=.o)
 
 NAME	=	bsq
 
-CFLAGS	+=	-I./include -g3 -Wall -Wextra -Wpedantic
+CFLAGS	+=	-I./include -g3
 
 CC		=	gcc
 
