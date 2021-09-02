@@ -2,7 +2,7 @@
 ## EPITECH PROJECT, 2020
 ## makefile
 ## File description:
-## makefile printf
+## makefile
 ##
 
 SRC	=	functions/my_getnbr.c 	\
@@ -17,18 +17,22 @@ SRC	=	functions/my_getnbr.c 	\
 		src/main.c	\
 		src/my_size.c 	\
 		src/my_column.c 	\
+		src/error.c 	\
+		src/display.c	\
 
-OBJ	=	$(SRC:.c=.o)
+OBJ	=	$(SRC:.c=.o)$(MAIN:.c=.o)
 
 NAME	=	bsq
 
-CFLAGS	+=	-I./include -g3
+CFLAGS	+=	-I./include -g3 -Wall -Wextra -Wpedantic
+
+CC		=	gcc
 
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	gcc -o $(NAME) $(OBJ) $(CFLAGS)
-	rm -f functions/*.o src/*.o
+	@$(CC) -o $(NAME) $(OBJ) $(CFLAGS)
+	@rm -f functions/*.o src/*.o
 
 clean:
 	rm -f $(OBJ)
@@ -37,3 +41,5 @@ fclean:	clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY:	clean fclean re all
