@@ -5,8 +5,7 @@
 ** main
 */
 
-#include "../include/bsq.h"
-#include <stdlib.h>
+#include "bsq.h"
 
 int main(int ac, char **av)
 {
@@ -20,17 +19,5 @@ int main(int ac, char **av)
     bsq->column = my_column(bsq);
     bsq->line = my_getnbr(bsq->fl);
     bsqfnctn(bsq);
-    return (0);
-}
-
-int my_error1(bsq_t *bsq)
-{
-    int i;
-
-    for (i = 0; bsq->fl[i] != '\n'; i += 1);
-    for (i += 1; bsq->fl[i] != '\0'; i += 1) {
-        if (bsq->fl[i] != 'o' && bsq->fl[i] != '.' && bsq->fl[i] != '\n')
-            return (84);
-    }
     return (0);
 }

@@ -5,11 +5,7 @@
 ** load_file_mem
 */
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "bsq.h"
 
 char *load_file_in_mem(char const *filepath)
 {

@@ -5,8 +5,7 @@
 ** mem_alloc_array
 */
 
-#include <stdlib.h>
-#include "../include/bsq.h"
+#include "bsq.h"
 
 char **mem_alloc_2d_array(bsq_t *bsq)
 {

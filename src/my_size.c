@@ -5,8 +5,7 @@
 ** my_size
 */
 
-#include "../include/bsq.h"
-#include <stdlib.h>
+#include "bsq.h"
 
 int *my_size(bsq_t *bsq)
 {

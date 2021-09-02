@@ -5,7 +5,7 @@
 ** my_column
 */
 
-#include "../include/bsq.h"
+#include "bsq.h"
 
 int my_column(bsq_t *bsq)
 {

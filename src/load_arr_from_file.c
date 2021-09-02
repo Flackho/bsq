@@ -5,8 +5,7 @@
 ** load_arr_from_file
 */
 
-#include <stdlib.h>
-#include "../include/bsq.h"
+#include "bsq.h"
 
 int my_adjust(bsq_t *bsq)
 {
